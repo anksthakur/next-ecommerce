@@ -38,7 +38,7 @@ export default function Page(){
                                     </Link>
                                     <div className="flex items-center gap-5">
                                         <div className="flex items-center gap-3">
-                                            <button onClick={()=>decrementcartItem(item.id)} className="p-1  rounded-md text-orange-500 hover:bg-orange-500 hover:text-white disabled:cursor-not-allowed">-
+                                            <button disabled={item.quantity == 1} onClick={()=>decrementcartItem(item.id)} className="p-1  rounded-md text-orange-500 hover:bg-orange-500 hover:text-white disabled:cursor-not-allowed"> -
                                                 {/* <MinusIcon className="w-6 h-6"/> */}
                                             </button>
                                             <p className="font-semibold text-xl">{item.quantity}</p>
